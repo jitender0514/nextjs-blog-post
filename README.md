@@ -23,3 +23,10 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+
+## Screenshots
+
+Home page
+
+![](https://github.com/jitender0514/nextjs-blog-post/blob/main/docs/blog-master.png)
+

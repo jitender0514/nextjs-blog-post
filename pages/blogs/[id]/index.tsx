@@ -1,13 +1,14 @@
 import React from 'react'
 import dbConnect from '../../../utils/database';
-import Post, {Posts} from "../../../models/Post";
+import Post from "../../../models/Post";
 import { GetServerSideProps, GetServerSidePropsContext } from 'next';
 import Blog from '@/components/Blog/Blog/Blog';
 import { NextParsedUrlQuery } from 'next/dist/server/request-meta';
 import Image from 'next/image';
+import { NewPosts } from '../../../types/FormTypes';
 
 type Props = {
-    post: Posts;
+    post: NewPosts;
 }
 
 interface Params extends NextParsedUrlQuery {

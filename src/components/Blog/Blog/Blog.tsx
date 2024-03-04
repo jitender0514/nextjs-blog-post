@@ -1,11 +1,8 @@
 import React from "react";
 import { Posts } from "../../../../models/Post";
 import Link from "next/link";
+import { NewPosts } from "../../../../types/FormTypes";
 
-interface NewPosts extends Posts {
-  updatedAt: string;
-  createdAt: string;
-}
 
 type Props = {
   post: NewPosts;

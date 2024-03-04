@@ -1,5 +1,6 @@
 import { FieldError } from "react-hook-form";
 import { z, ZodType } from "zod";
+import { Posts } from "../models/Post";
 
 export type FormData = {
     title: string;
@@ -33,3 +34,10 @@ export const PostSchema: ZodType<FormData> = z.object({
   content_html: z.string({ required_error: "required field" }).max(6000).min(1),
   category: z.string({ required_error: "required field" }).max(50).min(1),
 });
+
+
+
+export interface NewPosts extends Posts {
+    updatedAt: string;
+    createdAt: string;
+  }

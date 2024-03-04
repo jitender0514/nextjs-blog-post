@@ -1,11 +1,12 @@
 import React from "react";
 import dbConnect from "../../utils/database";
-import Post, { Posts } from "../../models/Post";
+import Post from "../../models/Post";
 import { GetServerSideProps } from "next";
 import Blog from "@/components/Blog/Blog/Blog";
+import { NewPosts } from "../../types/FormTypes";
 
 type Props = {
-  posts: Posts[];
+  posts: NewPosts[];
 };
 
 const BlogPage = (props: Props) => {
